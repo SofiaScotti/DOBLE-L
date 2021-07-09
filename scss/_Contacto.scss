@@ -1,0 +1,45 @@
+.NA {
+  display: grid;
+  grid-template-columns: 50%;
+}
+.Formulario {
+  margin: 2%;
+  padding: 2%;
+  color: white;
+}
+
+#Consulta {
+  padding: 2mm;
+  border: solid 2px black;
+  background-color: red;
+  color: white;
+  width: 12px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.Mensaje {
+  display: grid;
+  grid-template-columns: 50%;
+}
+
+.EnviarLimpForm {
+  display: flex;
+}
+
+.Button__Contacto--Enviar {
+  display: flex;
+  justify-content: center;
+  border: solid 2px rgb(85, 2, 2);
+  margin-right: 3%;
+  margin-left: 12%;
+}
+
+.Button__Contacto--LimpiarForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 2px rgb(85, 2, 2);
+  width: 150px;
+}

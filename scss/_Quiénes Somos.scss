@@ -1,0 +1,32 @@
+.Description__text--format {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.Bienvenidos__text {
+  position: absolute;
+  font-size: 60px;
+  margin-left: 25%;
+  font-family: "Poppins", sans-serif;
+}
+
+.QuienesSomos__camion--img {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.Description__text--format {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienessomos__p--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

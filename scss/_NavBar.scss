@@ -1,0 +1,44 @@
+.Block__NavBar--toggle {
+  margin: 0;
+  padding: 0px;
+}
+.navbar-toggler-icon {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: white;
+  border: solid 2px black;
+  background-image: linear-gradient(to bottom, red, rgb(139, 3, 3));
+  width: 100%;
+}
+
+a.nav-link {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: black;
+  color: red !important;
+}
+ul a.nav-link {
+  color: white;
+}
+
+button.navbar-toggler {
+  background-color: red;
+  border-radius: 3px;
+  border: solid 2px black;
+}
+.navbar-toggler-icon {
+  color: black;
+}
