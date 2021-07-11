@@ -1,0 +1,20 @@
+{
+  "name": "doblelscotti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "SofiSass": "sass --watch scss/Style.scss css/Style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiaScotti/DOBLE-L-SCOTTI--HTML.git"
+  },
+  "author": "Sofia Scotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofiaScotti/DOBLE-L-SCOTTI--HTML/issues"
+  },
+  "homepage": "https://github.com/SofiaScotti/DOBLE-L-SCOTTI--HTML#readme"
+}
