@@ -5399,6 +5399,17 @@ button.navbar-toggler {
   margin-top: 3%;
 }
 
+#carouselExampleIndicators {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  width: 500px;
+  height: 30rem;
+  border-radius: 5px #8b0303;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 @keyframes spinner-border {
   to {
     transform: rotate(360deg) /* rtl:ignore */;
@@ -10465,26 +10476,66 @@ button.navbar-toggler {
   margin-top: 3%;
 }
 
-/*SECTIONS*/
-.QuienesSomos__camion--img {
-  width: 400px;
-  height: 200px;
-  display: flex;
-  justify-items: center;
+#carouselExampleIndicators {
+  display: grid;
   justify-content: center;
-  justify-self: center;
+  justify-items: center;
+  width: 500px;
+  height: 30rem;
+  border-radius: 5px #8b0303;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
+/*SECTIONS*/
 .Description__text--format {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
+#QuiénesSomos {
+  display: flex;
+  margin-top: 3%;
+}
+
 .quienessomos__p--text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h3, .h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+  background-image: linear-gradient(to bottom, red, #8b0303);
+  opacity: 70%;
+}
+
+.Img__Camion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.Img__Deposito--2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.Img__Mostrador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
 }
 
 .items__bar--style {
