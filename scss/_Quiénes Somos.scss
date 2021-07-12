@@ -1,20 +1,48 @@
-.QuienesSomos__camion--img {
-  width: 400px;
-  height: 200px;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  justify-self: center;
-}
-
 .Description__text--format {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
+#QuiénesSomos {
+  display: flex;
+  margin-top: 3%;
+}
+
 .quienessomos__p--text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+  background-image: linear-gradient(to bottom, red, #8b0303);
+  opacity: 70%;
+}
+
+.Img__Camion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.Img__Deposito--2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.Img__Mostrador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
 }
