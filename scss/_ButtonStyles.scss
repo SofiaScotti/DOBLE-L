@@ -10,15 +10,15 @@
 
 .Button__Home--Pedido {
   margin-left: 45%;
-  margin-top: 1%;
+  margin-top: 4%;
   margin-bottom: 1%;
   border: 2px solid black;
   background-image: linear-gradient(to bottom, red, rgb(139, 3, 3));
-  font-size: 16px;
+  font-size: 20px;
   color: white;
-
-  width: 150px;
-  height: 50px;
+  padding: 6px;
+  width: 170px;
+  height: 70px;
   cursor: pointer;
 }
 .Button__Home--Pedido:hover.Button__Home--Pedido {

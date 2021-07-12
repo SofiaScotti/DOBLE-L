@@ -13,3 +13,27 @@
 .Buttons__Footer--SocialMedia {
   color: white;
 }
+
+.Whatsapp__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 55px;
+  height: 55px;
+}
+
+.Buttons__Footer--SocialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Facebook__btn {
+  padding: 3%;
+}
+
+.btn {
+  background-image: linear-gradient(to top, red, #8b0303);
+  text-decoration: none;
+}

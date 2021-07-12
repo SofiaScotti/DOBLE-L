@@ -1,24 +1,9 @@
-// .div__carousel--slide {
-//   max-width: 500px;
-//   margin-left: 30%;
-//   margin-top: 2%;
-//   margin-bottom: 2%;
-// }
-
-// .Carousel__Item1--img {
-//   background-image: url("../Carousel/tabla\ 1.jpg");
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// .Carousel__Item2--img {
-//   background-image: url("../Carousel/tabla\ 2.jpg");
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// .Carousel__Item3--img {
-//   background-image: url("../Carousel/tabla\ 3.jpg");
-//   background-position: center;
-//   background-size: cover;
-// }
+#carouselExampleSlidesOnly {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px #8b0303;
+  margin-top: 3%;
+}

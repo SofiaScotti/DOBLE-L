@@ -10,19 +10,10 @@
   color: white;
 }
 
-.Bienvenidos__text {
-  position: absolute;
-  font-size: 60px;
-  margin-left: 25%;
-  font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(to bottom, red, rgb(139, 3, 3));
-  padding: 2px;
+.Background__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
 }
-
-// .Video__Background--mp4 {
-//   background-size: cover;
-//   position: relative;
-//   margin-left: 2.1%;
-//   margin-right: 2.1%;
-//   min-height: 75vh;
-// }

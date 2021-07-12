@@ -1,12 +1,21 @@
 .Google__Map--img {
   display: grid;
   justify-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
+  border-radius: solid 2px;
 }
 
 .Location__Address--text {
   display: grid;
   justify-items: center;
+  margin-top: 2%;
+  color: white;
+}
+
+.h1Ubicación {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2%;
   color: white;
 }
