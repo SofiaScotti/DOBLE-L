@@ -10642,7 +10642,7 @@ h3, .h3 {
   display: flex;
   justify-items: center;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 
