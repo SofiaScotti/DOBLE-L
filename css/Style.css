@@ -5468,7 +5468,6 @@ button.navbar-toggler {
 }
 
 #carouselExampleSlidesOnly {
-  display: flex;
   justify-content: center;
   justify-items: center;
   width: 100%;
@@ -10600,7 +10599,6 @@ button.navbar-toggler {
 }
 
 #carouselExampleSlidesOnly {
-  display: flex;
   justify-content: center;
   justify-items: center;
   width: 100%;
