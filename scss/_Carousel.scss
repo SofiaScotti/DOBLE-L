@@ -12,9 +12,15 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  width: 500px;
-  height: 30rem;
+  width: 50rem;
+  height: 20rem;
   border-radius: 5px #8b0303;
   margin-top: 2px;
   margin-bottom: 2px;
+}
+
+.Marcas__Carousel--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
