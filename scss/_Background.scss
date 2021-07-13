@@ -10,10 +10,11 @@
   color: white;
 }
 
-.Background__img {
-  display: flex;
+.img-fluid {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50vh;
+  background-size: cover;
 }

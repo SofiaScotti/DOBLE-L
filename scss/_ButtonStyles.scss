@@ -9,14 +9,16 @@
 }
 
 .Button__Home--Pedido {
-  margin-left: 45%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   margin-top: 4%;
   margin-bottom: 1%;
   border: 2px solid black;
   background-image: linear-gradient(to bottom, red, rgb(139, 3, 3));
   font-size: 20px;
   color: white;
-  padding: 6px;
+  padding: 4px;
   width: 170px;
   height: 70px;
   cursor: pointer;
