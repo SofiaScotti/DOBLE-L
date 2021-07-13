@@ -42,3 +42,9 @@ button.navbar-toggler {
 .navbar-toggler-icon {
   color: black;
 }
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
