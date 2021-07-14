@@ -10433,15 +10433,10 @@ h1, .h1 {
   color: white;
 }
 
-.img-fluid {
+.section1 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .Block__NavBar--toggle {
@@ -10509,8 +10504,13 @@ button.navbar-toggler {
   cursor: pointer;
 }
 
+.section2btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
 .Button__Home--Pedido {
-  display: grid;
   justify-content: center;
   align-items: center;
   margin-top: 4%;

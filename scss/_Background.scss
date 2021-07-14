@@ -10,10 +10,8 @@
   color: white;
 }
 
-.img-fluid {
+.section1 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  object-fit: cover;
-  width: max-content;
 }

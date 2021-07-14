@@ -8,8 +8,12 @@
   cursor: pointer;
 }
 
+.section2btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
 .Button__Home--Pedido {
-  display: grid;
   justify-content: center;
   align-items: center;
   margin-top: 4%;
