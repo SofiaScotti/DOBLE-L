@@ -10423,6 +10423,12 @@ h1, .h1 {
   align-items: center;
 }
 
+.logos__marcas--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .background__color--font {
   font-family: "Poppins", sans-serif;
   background-color: black;
