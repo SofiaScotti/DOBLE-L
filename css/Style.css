@@ -10562,6 +10562,7 @@ button.navbar-toggler {
   width: 100%;
   justify-content: center;
   background-image: linear-gradient(to bottom, red, #8b0303);
+  margin-top: 3%;
   font-weight: bold;
   cursor: pointer;
 }
@@ -10700,7 +10701,7 @@ h3, .h3 {
   justify-content: stretch;
   align-items: stretch;
   justify-content: space-around;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .Button__Select--Menu {
