@@ -10751,6 +10751,8 @@ h3, .h3 {
   justify-content: center;
   align-items: flex-start;
   opacity: 70%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .imagen__picada--sup {
@@ -10758,6 +10760,8 @@ h3, .h3 {
   justify-content: center;
   align-items: flex-start;
   opacity: 70%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .imagen__jamon--sup {
@@ -10765,6 +10769,8 @@ h3, .h3 {
   justify-content: center;
   align-items: flex-start;
   opacity: 70%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .Google__Map--img {
