@@ -5485,6 +5485,14 @@ button.navbar-toggler {
   margin-bottom: 50px;
 }
 
+.CarouselTablas {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 10rem;
+}
+
 @-webkit-keyframes spinner-border {
   to {
     transform: rotate(360deg) /* rtl:ignore */;
