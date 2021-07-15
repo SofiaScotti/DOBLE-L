@@ -5474,19 +5474,19 @@ button.navbar-toggler {
   height: 100vh;
 }
 
-#carouselExampleIndicators {
-  display: grid;
+.carousel__marcas--123 {
+  display: flex;
   justify-content: center;
   justify-items: center;
-  width: 50rem;
-  height: 20rem;
-  border-radius: 5px #8b0303;
+  width: 20rem;
+  height: 15rem;
+  background-size: contain;
   margin-top: 2px;
   margin-bottom: 2px;
 }
 
-.Marcas__Carousel--img {
-  display: flex;
+.Marcas__txt {
+  display: grid;
   justify-content: center;
   align-items: center;
 }
