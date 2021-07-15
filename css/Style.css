@@ -10743,6 +10743,21 @@ h3, .h3 {
   display: grid;
   justify-content: center;
   align-items: flex-start;
+  opacity: 70%;
+}
+
+.imagen__picada--sup {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 70%;
+}
+
+.imagen__jamon--sup {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 70%;
 }
 
 .Google__Map--img {
