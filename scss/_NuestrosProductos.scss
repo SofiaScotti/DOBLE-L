@@ -83,3 +83,21 @@
   margin-top: 2%;
   margin-bottom: 2%;
 }
+
+@media (max-width: 768px) {
+  .imagen__quesos--sup {
+    max-width: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagen__picada--sup {
+    max-width: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagen__jamon--sup {
+    max-width: 60rem;
+  }
+}
