@@ -10793,7 +10793,7 @@ h3, .h3 {
   justify-items: center;
   margin-top: 3%;
   border-radius: solid 2px;
-  height: 80vh;
+  height: 60vh;
 }
 
 @media (max-width: 768px) {
@@ -10804,7 +10804,6 @@ h3, .h3 {
 .Location__Address--text {
   display: grid;
   justify-items: center;
-  margin-top: 2%;
   color: white;
   height: 20vh;
 }
@@ -10815,11 +10814,7 @@ h3, .h3 {
   align-items: center;
   margin-top: 2%;
   color: white;
-  height: 20vh;
-}
-
-.background__color--font {
-  height: 100vh;
+  height: 10vh;
 }
 
 .NA {

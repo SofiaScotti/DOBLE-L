@@ -3,7 +3,7 @@
   justify-items: center;
   margin-top: 3%;
   border-radius: solid 2px;
-  height: 80vh;
+  height: 60vh;
 }
 @media (max-width: 768px) {
   .img {
@@ -13,7 +13,7 @@
 .Location__Address--text {
   display: grid;
   justify-items: center;
-  margin-top: 2%;
+
   color: white;
   height: 20vh;
 }
@@ -24,9 +24,9 @@
   align-items: center;
   margin-top: 2%;
   color: white;
-  height: 20vh;
+  height: 10vh;
 }
 
-.background__color--font {
-  height: 100vh;
-}
+// .background__color--font {
+//   height: 100vh;
+// }
