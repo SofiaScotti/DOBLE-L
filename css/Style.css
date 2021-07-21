@@ -10793,19 +10793,19 @@ h3, .h3 {
   justify-items: center;
   margin-top: 3%;
   border-radius: solid 2px;
-  height: 60vh;
 }
 
 @media (max-width: 768px) {
-  .img {
-    max-width: 10rem;
+  .img__google--map {
+    max-width: 25rem;
+    max-height: 20rem;
   }
 }
 .Location__Address--text {
   display: grid;
   justify-items: center;
   color: white;
-  height: 20vh;
+  margin-top: 5%;
 }
 
 .h1Ubicación {
@@ -10814,7 +10814,10 @@ h3, .h3 {
   align-items: center;
   margin-top: 2%;
   color: white;
-  height: 10vh;
+}
+
+.main__vh {
+  height: 100vh;
 }
 
 .NA {
