@@ -10695,7 +10695,7 @@ h3, .h3 {
 }
 
 .input__buscar {
-  width: 25rem;
+  width: 10rem;
 }
 
 .Section__SearchBar--Bar {
@@ -10779,6 +10779,47 @@ h3, .h3 {
   margin-bottom: 2%;
 }
 
+@media only screen and (min-width: 500px) {
+  .img__quesos {
+    width: 45rem;
+    height: 15rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .img__quesos {
+    width: 60rem;
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .img__picada {
+    width: 45rem;
+    height: 15rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .img__picada {
+    width: 60rem;
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .img__jamon {
+    width: 45rem;
+    height: 15rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .img__jamon {
+    width: 60rem;
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .input__buscar {
+    width: 20rem;
+  }
+}
 .footer__np {
   width: 100%;
 }

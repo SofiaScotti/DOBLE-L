@@ -8,7 +8,7 @@
   width: 100%;
 }
 .input__buscar {
-  width: 25rem;
+  width: 10rem;
 }
 
 .Section__SearchBar--Bar {
@@ -90,23 +90,52 @@
   margin-bottom: 2%;
 }
 
-// @media screen  {
-//   .imagen__quesos--sup {
-//     max-width: 300px;
-//   }
-// }
+@media only screen and (min-width: 500px) {
+  .img__quesos {
+    width: 45rem;
+    height: 15rem;
+  }
+}
 
-// @media (max-width: 768px) {
-//   .imagen__picada--sup {
-//     max-width: 1rem;
-//   }
-// }
+@media only screen and (min-width: 769px) {
+  .img__quesos {
+    width: 60rem;
+    height: 20rem;
+  }
+}
 
-// @media (max-width: 768px) {
-//   .imagen__jamon--sup {
-//     max-width: 40rem;
-//   }
-// }
+@media only screen and (min-width: 500px) {
+  .img__picada {
+    width: 45rem;
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .img__picada {
+    width: 60rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .img__jamon {
+    width: 45rem;
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .img__jamon {
+    width: 60rem;
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .input__buscar {
+    width: 20rem;
+  }
+}
 
 .footer__np {
   width: 100%;
