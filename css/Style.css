@@ -10707,7 +10707,10 @@ h3, .h3 {
   justify-content: stretch;
   align-items: stretch;
   justify-content: space-around;
+  justify-content: center;
   margin-top: 3%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .Button__Select--Menu {
@@ -10733,6 +10736,7 @@ h3, .h3 {
 .card-body {
   font-family: "Poppins", sans-serif;
   font-weight: bold 10px;
+  justify-content: center;
 }
 
 .card-text {
@@ -10753,6 +10757,8 @@ h3, .h3 {
   opacity: 70%;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
 }
 
 .imagen__picada--sup {
@@ -10775,19 +10781,23 @@ h3, .h3 {
 
 @media (max-width: 768px) {
   .imagen__quesos--sup {
-    max-width: 10rem;
+    max-width: 1rem;
   }
 }
 @media (max-width: 768px) {
   .imagen__picada--sup {
-    max-width: 10rem;
+    max-width: 1rem;
   }
 }
 @media (max-width: 768px) {
   .imagen__jamon--sup {
-    max-width: 60rem;
+    max-width: 40rem;
   }
 }
+.footer__np {
+  width: 100%;
+}
+
 .Google__Map--img {
   display: grid;
   justify-items: center;
