@@ -10859,18 +10859,32 @@ h3, .h3 {
 .NA {
   display: grid;
   grid-template-columns: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .Formulario {
   margin: 2%;
   padding: 2%;
   color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.TipoDeConsulta {
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 
 #Consulta {
+  display: inline;
+  justify-content: center;
+  align-items: center;
   padding: 2mm;
   border: solid 2px black;
-  background-color: red;
+  background-color: #a50e0e;
+  background-image: linear-gradient(to bottom, red, #8b0303);
   color: white;
   width: 180px;
   margin-top: 2%;
@@ -10881,24 +10895,37 @@ h3, .h3 {
 .Mensaje {
   display: grid;
   grid-template-columns: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .EnviarLimpForm {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Button__Contacto--Enviar {
   display: flex;
   justify-content: center;
+  align-items: center;
   border: solid 2px #550202;
-  margin-right: 3%;
-  margin-left: 12%;
+  background-image: linear-gradient(to bottom, red, #8b0303);
 }
 
 .Button__Contacto--LimpiarForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border: solid 2px #550202;
   width: 150px;
+  margin-left: 3%;
+  background-image: linear-gradient(to bottom, red, #8b0303);
+}
+
+@media only screen and (min-width: 500px) {
+  .cons__menu--btn {
+    margin-left: 35%;
+  }
 }/*# sourceMappingURL=Style.css.map */
