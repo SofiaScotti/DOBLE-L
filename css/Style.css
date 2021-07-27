@@ -10607,6 +10607,14 @@ button.navbar-toggler {
   text-decoration: none;
 }
 
+.btn-fb {
+  text-decoration: none;
+}
+
+.btn-ig {
+  text-decoration: none;
+}
+
 .webby {
   display: flex;
   font-family: "Poppins", sans-serif;
