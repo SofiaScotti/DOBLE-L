@@ -51,4 +51,16 @@
   color: white;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.webby-link {
+  margin-top: 1%;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.webby-link:hover {
+  color: rgb(243, 125, 208);
 }
