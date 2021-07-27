@@ -10607,6 +10607,14 @@ button.navbar-toggler {
   text-decoration: none;
 }
 
+.webby {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
 #carouselExampleSlidesOnly {
   justify-content: center;
   justify-items: center;
