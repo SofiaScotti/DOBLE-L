@@ -105,25 +105,21 @@
     </section>
 <br>
 <br>
-  <form action="" method="POST">
+  <form action="enviar.php" method="POST">
 
       <div class="NA">
       <label for="Nombre">Nombre:</label>  
-      <input type="text" id="Nombre" name="Nombre"/>
-     
+      <input type="text" id="Nombre" name="Nombre" required/>
+      <br>
       <label for="Apellido">Apellido:</label>
-      <input type="text" id="Apellido" name="Apellido"/>
-
+      <input type="text" id="Apellido" name="Apellido" required/>
       </div>
-
-
-
       <div class="Mensaje">
       <br>
       <br>
       Mensaje:
       <br>
-      <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+      <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" required></textarea>
       <br>
 
       </div>
@@ -131,7 +127,7 @@
       <div class="EnviarLimpForm">
 
       <button class="Button__Contacto--Enviar"> Enviar </button>
-      <button class="Button__Contacto--LimpiarForm"> Limpiar Formulario </button>
+      <button class="Button__Contacto--LimpiarForm" type="reset"> Limpiar Formulario </button>
 
       </div>
       
