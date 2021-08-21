@@ -20,6 +20,8 @@
 //   this.stock = stock;
 // }
 
+// ---------------------------- Desafío Clase 5 "Objetos  ------------------------------- //
+
 class Product {
   constructor(brand, name, price, stock) {
     this.brand = brand;
