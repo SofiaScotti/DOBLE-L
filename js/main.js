@@ -1,8 +1,8 @@
-let user = prompt("Ingresá tu usuario");
-let password = prompt("Ingresá tu contraseña");
+// let user = prompt("Ingresá tu usuario");
+// let password = prompt("Ingresá tu contraseña");
 
-alert("¡Hola, " + user + "! Ya podés empezar tu compra.");
-console.log("El usuario " + user + " ha iniciado sesión.");
+// alert("¡Hola, " + user + "! Ya podés empezar tu compra.");
+// console.log("El usuario " + user + " ha iniciado sesión.");
 
 class Product {
   constructor(brand, name, price, stock) {
@@ -54,50 +54,77 @@ const dataBase = [
   product11,
 ];
 
-console.log(dataBase.length);
-
-dataBase.forEach((product) => {
-  console.log(product);
+let acumulador = ``;
+dataBase.forEach((Product) => {
+  <div class="container">
+    <div class="row NuestrosProductos__Card--Prod">
+      <div class="col-12 col-md-4">
+        <div class="card" style="width: 18rem">
+          <img
+            src="./Productos/prod1.JPEG"
+            class="card-img-top"
+            alt="Queso Cremoso"
+          />
+          <div class="card-body">
+            <h5 class="card-title"> ${name}</h5>
+            <p class="card-text"> ${price} </p>
+            <a
+              href="#"
+              onclick="agregarAlCarrito(${Product.name})"
+              class="btn btn-primary"
+            >
+              Agregar al Carrito
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>;
 });
 
-function sumNumbers() {
-  const numberA = prompt("Ingresá cantidad de productos A");
-  const numberB = prompt("Ingresá cantidad de productos B");
-  const numberC = prompt("Ingresá cantidad de productos C");
-  console.log(numberA, numberB, numberC);
-}
+document.getElementsByClassName("NuestrosProductos__Card--Prod").innerHTML =
+  acumulador;
 
-function firstNumber() {
-  const numberA = parseInt(prompt("Ingresá cantidad de productos A"));
-  return numberA;
-}
+console.log();
 
-function secondNumber() {
-  const numberB = parseInt(prompt("Ingresá cantidad de productos A"));
-  return numberB;
-}
+// function sumNumbers() {
+//   const numberA = prompt("Ingresá cantidad de productos A");
+//   const numberB = prompt("Ingresá cantidad de productos B");
+//   const numberC = prompt("Ingresá cantidad de productos C");
+//   console.log(numberA, numberB, numberC);
+// }   suma prod de dist categorias
 
-function thirdNumber() {
-  const numberC = parseInt(prompt("Ingresá cantidad de productos A"));
-  return numberC;
-}
+// function firstNumber() {
+//   const numberA = parseInt(prompt("Ingresá cantidad de productos A"));
+//   return numberA;
+// }
 
-let numberA = parseInt(prompt("Ingresá cantidad de items A"));
-console.log("El usuario " + user + " compró " + numberA + " productos A");
+// function secondNumber() {
+//   const numberB = parseInt(prompt("Ingresá cantidad de productos A"));
+//   return numberB;
+// }
 
-let numberB = parseInt(prompt("Ingresá cantidad de productos B"));
-console.log("El usuario " + user + " compró " + numberB + " productos B");
+// function thirdNumber() {
+//   const numberC = parseInt(prompt("Ingresá cantidad de productos A"));
+//   return numberC;
+// }
 
-let numberC = parseInt(prompt("Ingresá cantidad de productos C"));
-console.log("El usuario " + user + " compró " + numberC + " productos C");
+// let numberA = parseInt(prompt("Ingresá cantidad de items A"));
+// console.log("El usuario " + user + " compró " + numberA + " productos A");
 
-let total = 0;
+// let numberB = parseInt(prompt("Ingresá cantidad de productos B"));
+// console.log("El usuario " + user + " compró " + numberB + " productos B");
 
-function sumNumbers(numberA, numberB, numberC) {
-  total = numberA + numberB + numberC;
-}
+// let numberC = parseInt(prompt("Ingresá cantidad de productos C"));
+// console.log("El usuario " + user + " compró " + numberC + " productos C");
 
-sumNumbers(numberA, numberB, numberC);
-alert("¡Compraste " + total + " productos!");
+// let total = 0;
 
-console.log("El usuario " + user + " compró " + total + " productos en total");
+// function sumNumbers(numberA, numberB, numberC) {
+//   total = numberA + numberB + numberC;
+// }
+
+// sumNumbers(numberA, numberB, numberC);
+// alert("¡Compraste " + total + " productos!");
+
+// console.log("El usuario " + user + " compró " + total + " productos en total");
