@@ -142,3 +142,29 @@ const contenedorCards = document.getElementById("contenedor-productos");
 
 contenedorCards.innerHTML = acumulador;
 console.log(contenedorCards);
+
+//** ------------  JSON  */
+
+const userLS = localStorage.getItem("usuario");
+
+if (userLS) {
+  console.log("el" + userLS + " ha ingresado.");
+} else {
+  const user = prompt("Ingresar usuario");
+  localStorage.setItem("usuario", user);
+}
+
+const product1JSON = JSON.stringify(product1);
+
+console.log(product1);
+console.log(product1JSON);
+
+localStorage.setItem("product1", product1JSON);
+
+carrito = [];
+
+carrito.push(dataBase[2]);
+carrito.push(dataBase[3]);
+
+const carritoJSON = JSON.stringify(carrito);
+localStorage.setItem("carrito", carritoJSON);
