@@ -119,18 +119,19 @@
 
     <main>
       <section class="Section__SearchBar--Bar">
-        <select name="Marca" id="Marca" class="Button__Select--Menu">
-          <option value="LaPaulina">Quesos</option>
-          <option value="Paladini">Untables</option>
-          <option value="Calchaquí">Embutidos</option>
-          <option value="Cagnoli">Snacks</option>
+        <select name="categoria" id="categoria" class="Button__Select--Menu">
+          <option value="quesos">Quesos</option>
+          <option value="untables">Quesos Untables</option>
+          <option value="jamones">Jamones</option>
+          <option value="salames">Salames</option>
+          <option value="snacks">Snacks</option>
         </select>
-        <div class="items__bar--style">
-          <label for="Buscar"></label>
-          <input class="input__buscar" type="text" placeholder="Buscar" />
 
-          <i class="fas fa-shopping-cart"></i>
-        </div>
+        <!-- <div class="items__bar--style">
+          <label for="Buscar"></label>
+          <input class="input__buscar" type="text" placeholder="Buscar" /> -->
+
+        <i class="fas fa-shopping-cart"></i>
       </section>
 
       <!-- -------------------------------------------- CARDS--------------------------------------------------------------- -->
@@ -141,81 +142,36 @@
       width="350rem" height="150rem">
     </section>  -->
 
-    <!-- -------------------------------------------- 1ra fila------------------------------------------------------------- -->
+        
+          <div class="container">
+            <div id="contenedor-quesos" class="row NuestrosProductos__Card--Prod">
+            </div>
+          </div> 
+
+          <!-- Productos pendientes de creación
+             <div class="container">
+            <div id="contenedor-untables" class="row NuestrosProductos__Card--Prod">
+            </div>
+          </div>  -->
 
           <div class="container">
-      <div id="contenedor-productos" class="row NuestrosProductos__Card--Prod">
-        <!-- <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="./Productos/prod1.JPEG" class="card-img-top" alt="Queso Cremoso" />
-          <div class="card-body">
-            <h5 class="card-title">Horma Queso Cremoso</h5>
-            <p class="card-text"> La Paulina 4kg aprox. $396/kg</p>
-            <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-          </div>
-        </div>
-      </div> 
+            <div id="contenedor-jamones" class="row NuestrosProductos__Card--Prod">
+            </div>
+          </div> 
+
+          <div class="container">
+            <div id="contenedor-salames" class="row NuestrosProductos__Card--Prod">
+            </div>
+          </div> 
+
+          <div class="container">
+            <div id="contenedor-snacks" class="row NuestrosProductos__Card--Prod">
+            </div>
+          </div> 
 
         
-        <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="./Productos/prod2.JPEG" class="card-img-top" alt="Queso Doble Crema" />
-          <div class="card-body">
-            <h5 class="card-title">Horma Queso Doble Crema</h5>
-            <p class="card-text">
-               La Paulina 4kg aprox. $405/kg
-            </p>
-            <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="./Productos/prod3.JPEG" class="card-img-top" alt="Queso Dambo" />
-          <div class="card-body">
-            <h5 class="card-title">Barra Queso Dambo</h5>
-            <p class="card-text">La Paulina 4kg aprox. $320/kg</p>
-            <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-          </div>
-        </div>
-      </div>  -->
-        <!-- -------------------------------------------- 2da fila--------------------------------------------------------------- -->
-         <!-- <div class="container">
-      <div class="row NuestrosProductos__Card--Prod">
-        <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="./Productos/prod4.JPEG" class="card-img-top" alt="Queso Goya" />
-          <div class="card-body">
-            <h5 class="card-title">Horma Queso Goya</h5>
-            <p class="card-text"> La Paulina 4kg aprox. $458/kg</p>
-            <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-          </div>
-        </div>
-      </div>
-        <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="./Productos/prod17.JPEG" class="card-img-top" alt="Queso Pategrás" />
-          <div class="card-body">
-            <h5 class="card-title">Horma Queso Pategrás</h5>
-            <p class="card-text">
-               La Paulina 4kg aprox. $360/kg
-            </p>
-            <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="./Productos/prod16.JPEG" class="card-img-top" alt="Queso Azul" />
-          <div class="card-body">
-            <h5 class="card-title">Horma Queso Azul</h5>
-            <p class="card-text"> La Paulina 4kg aprox. $473/kg</p>
-            <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- ------------------------------------------------ UNTABLES ----------------------------------------------- -->
+      </main>
+<!-- ------------------------------------------------ UNTABLES ----------------------------------------------- -->
 
          <!-- <section class="imagen__untables--sup">
           <img
@@ -226,153 +182,26 @@
           />
         </section> -->
         
-
-        <!-- ------------------------------------------------ 1ra fila ----------------------------------------------- -->
-
-         <!-- <div class="container">
-        <div class="row NuestrosProductos__Card--Prod">
-          <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img src="./Productos/prod6.JPEG" class="card-img-top" alt="Queso Crema" />
-            <div class="card-body">
-              <h5 class="card-title">Queso Crema Clásico</h5>
-              <p class="card-text">La Paulina x 300gr. $110</p>
-              <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-          </div>
-        </div>
-          <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img src="./Productos/prod7.JPEG" class="card-img-top" alt="Queso Crema Doble" />
-            <div class="card-body">
-              <h5 class="card-title">Queso Crema Doble Crema</h5>
-              <p class="card-text">
-                 La Paulina x 300gr. $130
-              </p>
-              <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img src="./Productos/prod8.JPEG" class="card-img-top" alt="Queso Crema Ciboulette" />
-            <div class="card-body">
-              <h5 class="card-title">Queso Crema Ciboulette</h5>
-              <p class="card-text">La Paulina x 250gr $140</p>
-              <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-          </div>
-        </div> -->
-        <!-- ------------------------------------------------ 2da fila ----------------------------------------------- -->
-
-         <!-- <div class="container">
-      <div class="row NuestrosProductos__Card--Prod">    
-            <div class="col-12 col-md-4">
-                <div class="card" style="width: 18rem">
-                  <img src="./Productos/prod5.JPEG" class="card-img-top" alt="Queso Untable Clásico" />
-                  <div class="card-body">
-                    <h5 class="card-title">Queso Untable Clásico</h5>
-                    <p class="card-text">
-                     La Paulina x 125gr $95 
-                    </p>
-                    <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-                  </div>
-               </div>
-             </div>
-          </div> 
-        </div>
-      </div>  -->
-
-        <!-- -------------------------------------------- EMBUTIDOS ------------------------------------------------- -->
+<!-- -------------------------------------------- EMBUTIDOS ------------------------------------------------- -->
 
          <!-- <section class="imagen__jamon--sup">
         <img src="./IMG - LOGOS/tabla 2.jpg" class="img_fluid img__jamon animate__animated animate__fadeIn" 
         width="350rem" height="150rem">
       </section>  -->
-        <!-- -------------------------------------------- 1ra fila ------------------------------------------------- -->
 
-         <!-- <div class="container">
-        <div class="row NuestrosProductos__Card--Prod">
-          <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img src="./Productos/prod9.JPEG" class="card-img-top" alt="Jamón Cocido Natural" />
-            <div class="card-body">
-              <h5 class="card-title">Jamón Cocido Natural</h5>
-              <p class="card-text">Calchaquí x 3kg aprox. $205/kg</p>
-              <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-          </div>
-        </div>
-          <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img src="./Productos/prod11.JPEG" class="card-img-top" alt="Salame Fuet" />
-            <div class="card-body">
-              <h5 class="card-title">Salame Fuet </h5>
-              <p class="card-text">
-                Cagnoli x Unidad $112
-              </p>
-              <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img src="./Productos/prod12.JPEG" class="card-img-top" alt="Salame Picado Fino" />
-            <div class="card-body">
-              <h5 class="card-title">Salame Picado Fino</h5>
-              <p class="card-text">Cagnoli x Unidad $67</p>
-              <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-            </div>
-          </div>
-        </div>  -->
 
-        <!-- -------------------------------------------- SNACKS ------------------------------------------------- -->
+
+
+<!-- -------------------------------------------- SNACKS ------------------------------------------------- -->
 
          <!-- <section class="imagen__snacks--sup">
           <img src="./IMG - LOGOS/tabla4.jpg" class="img_fluid img__jamon animate__animated animate__fadeIn" 
           width="350rem" height="150rem">
         </section>  -->
 
-        <!-- -------------------------------------------- 1ra fila ------------------------------------------------- -->
 
-         <!-- <div class="container">
-          <div class="row NuestrosProductos__Card--Prod">
-            <div class="col-12 col-md-4">
-            <div class="card" style="width: 18rem">
-              <img src="./Productos/prod13.JPEG" class="card-img-top" alt="Papas Fritas Americano" />
-              <div class="card-body">
-                <h5 class="card-title">Papas Fritas Corte Americano</h5>
-                <p class="card-text">Krachitos x 900gr $234</p>
-                <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-              </div>
-            </div>
-          </div>
-            <div class="col-12 col-md-4">
-            <div class="card" style="width: 18rem">
-              <img src="./Productos/prod14.JPEG" class="card-img-top" alt="Papas Fritas Tradicional" />
-              <div class="card-body">
-                <h5 class="card-title">Papas Fritas Corte Tradicional</h5>
-                <p class="card-text">
-                  Krachitos x 900gr $229
-                </p>
-                <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="card" style="width: 18rem">
-              <img src="./Productos/prod15.JPEG" class="card-img-top" alt="Bastonitos Queso" />
-              <div class="card-body">
-                <h5 class="card-title">Bastonitos de Queso</h5>
-                <p class="card-text">Krachitos x 900gr $255</p>
-                <a href="./Contacto.html" class="btn btn-primary">Agregar al Carrito</a>
-              </div>
-            </div>
-          </div> 
-       </section> -->
-    </main>
 
-    <!-- Footer -->
+<!-- Footer -->
 
     <div class="container__footer">
       <footer class="footer__button--modifier">

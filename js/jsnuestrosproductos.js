@@ -1,92 +1,107 @@
 class Product {
-  constructor(brand, name, price, stock, imagen) {
+  constructor(brand, name, price, stock, imagen, categoria) {
     this.brand = brand;
     this.name = name;
     this.price = price;
     this.stock = stock;
     this.imagen = imagen;
+    this.categoria = categoria;
   }
   mostrarMarca() {
     console.log(this.brand);
   }
 }
-
+//*QUESOS*//
 const product1 = new Product(
   "La Paulina",
   "Queso Cremoso",
   396,
   800,
-  "./Productos/prod1.JPEG"
+  "./Productos/prod1.JPEG",
+  "queso"
 );
 const product2 = new Product(
   "La Paulina",
   "Queso Cremoso Doble Crema",
   405,
   500,
-  "./Productos/prod2.JPEG"
+  "./Productos/prod2.JPEG",
+  "queso"
 );
 const product3 = new Product(
   "La Paulina",
   "Queso Dambo",
   320,
   300,
-  "./Productos/prod3.JPEG"
+  "./Productos/prod3.JPEG",
+  "queso"
 );
 const product4 = new Product(
   "La Paulina",
   "Queso Goya",
   458,
   300,
-  "./Productos/prod4.JPEG"
+  "./Productos/prod4.JPEG",
+  "queso"
 );
 const product5 = new Product(
   "La Paulina",
   "Queso Pategrás",
   360,
   750,
-  "./Productos/prod17.JPEG"
+  "./Productos/prod17.JPEG",
+  "queso"
 );
 const product6 = new Product(
   "La Paulina",
   "Queso Azul",
   473,
   345,
-  "./Productos/prod16.JPEG"
+  "./Productos/prod16.JPEG",
+  "queso"
 );
+//*JAMONES*//
 const product7 = new Product(
   "Calchaquí",
   "Jamón Cocido Natural",
   205,
   600,
-  "./Productos/prod9.JPEG"
+  "./Productos/prod9.JPEG",
+  "jamones"
 );
+//*SALAMES*//
 const product8 = new Product(
   "Cagnoli",
   "Salame Fuet",
   112,
   720,
-  "./Productos/prod11.JPEG"
+  "./Productos/prod11.JPEG",
+  "salames"
 );
+//* SNACKS *//
 const product9 = new Product(
   "Krachitos",
   "Papas Fritas Corte Americano",
   234,
   950,
-  "./Productos/prod13.JPEG"
+  "./Productos/prod13.JPEG",
+  "snacks"
 );
 const product10 = new Product(
   "Krachitos",
   "Papas fritas Corte Tradicional",
   229,
   950,
-  "./Productos/prod14.JPEG"
+  "./Productos/prod14.JPEG",
+  "snacks"
 );
 const product11 = new Product(
   "Krachitos",
   "Bastonitos",
   255,
   950,
-  "./Productos/prod15.JPEG"
+  "./Productos/prod15.JPEG",
+  "snacks"
 );
 
 const dataBase = [
@@ -103,16 +118,43 @@ const dataBase = [
   product11,
 ];
 
-// const carrito = [];
-const dataBaseLength = dataBase.length;
-console.log(dataBaseLength);
-for (let i = 0; i < dataBaseLength; i++) {
-  dataBase[i].mostrarMarca();
+function mostrarMarcasProductos() {
+  const dataBaseLength = dataBase.length;
+  console.log(dataBaseLength);
+  for (let i = 0; i < dataBaseLength; i++) {
+    dataBase[i].mostrarMarca();
+  }
 }
 
-let acumulador = ``;
-dataBase.forEach((myProducts) => {
-  acumulador += `<div class="container">
+mostrarMarcasProductos();
+
+function filtrarCategoria(arrayProductos, categoria) {
+  const filtrados = arrayProductos.filter(
+    (producto) => producto.categoria === categoria
+  );
+  return filtrados;
+}
+
+const quesos = filtrarCategoria(dataBase, "queso");
+console.log(quesos);
+renderizarProductos(quesos, "contenedor-quesos");
+
+const jamones = filtrarCategoria(dataBase, "jamones");
+console.log(jamones);
+renderizarProductos(jamones, "contenedor-jamones");
+
+const salames = filtrarCategoria(dataBase, "salames");
+console.log(salames);
+renderizarProductos(salames, "contenedor-salames");
+
+const snacks = filtrarCategoria(dataBase, "snacks");
+console.log(snacks);
+renderizarProductos(snacks, "contenedor-snacks");
+
+function renderizarProductos(arrayProductos, contenedorId) {
+  let acumulador = ``;
+  arrayProductos.forEach((myProducts) => {
+    acumulador += `<div class="container">
       <div class="row NuestrosProductos__Card--Prod">
         <div class="col-12 col-md-4">
           <div class="card" style="width: 18rem">
@@ -136,12 +178,11 @@ dataBase.forEach((myProducts) => {
         </div>
       </div>
     </div>;`;
-});
-
-const contenedorCards = document.getElementById("contenedor-productos");
-
-contenedorCards.innerHTML = acumulador;
-console.log(contenedorCards);
+  });
+  const contenedorCards = document.getElementById(contenedorId);
+  contenedorCards.innerHTML = acumulador;
+  console.log(contenedorCards);
+}
 
 //** ------------  JSON  */
 
