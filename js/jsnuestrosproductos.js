@@ -118,7 +118,7 @@ const dataBase = [
   product11,
 ];
 
-function mostrarMarcasProductos() {
+function mostrarMarcasProductos(dataBase) {
   const dataBaseLength = dataBase.length;
   console.log(dataBaseLength);
   for (let i = 0; i < dataBaseLength; i++) {
@@ -126,7 +126,7 @@ function mostrarMarcasProductos() {
   }
 }
 
-mostrarMarcasProductos();
+mostrarMarcasProductos(dataBase);
 
 function filtrarCategoria(arrayProductos, categoria) {
   const filtrados = arrayProductos.filter(
@@ -195,12 +195,9 @@ if (userLS) {
   localStorage.setItem("usuario", user);
 }
 
-const product1JSON = JSON.stringify(product1);
+const baseDeDatos = JSON.stringify(dataBase);
 
-console.log(product1);
-console.log(product1JSON);
-
-localStorage.setItem("product1", product1JSON);
+console.log(baseDeDatos);
 
 carrito = [];
 
