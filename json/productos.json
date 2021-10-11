@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "brand": "La Paulina",
+        "name": "Queso Cremoso",
+        "price": 396,
+        "stock": 800,
+        "imagen": "./Productos/prod1.JPEG",
+        "categoria": "queso"
+    },
+    {
+        "id": 2,
+        "brand": "La Paulina",
+        "name": "Queso Cremoso Doble Crema",
+        "price": 405,
+        "stock": 500,
+        "imagen": "./Productos/prod2.JPEG",
+        "categoria": "queso"
+    }
+]

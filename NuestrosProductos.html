@@ -119,19 +119,35 @@
 
     <main>
       <section class="Section__SearchBar--Bar">
-        <select name="categoria" id="categoria" class="Button__Select--Menu">
+
+    <!-- Menu Select -->
+
+        <!-- <select name="categoria" id="categoria" class="Button__Select--Menu">
           <option value="quesos">Quesos</option>
           <option value="untables">Quesos Untables</option>
           <option value="jamones">Jamones</option>
           <option value="salames">Salames</option>
           <option value="snacks">Snacks</option>
-        </select>
+        </select> -->
 
         <!-- <div class="items__bar--style">
           <label for="Buscar"></label>
           <input class="input__buscar" type="text" placeholder="Buscar" /> -->
 
-        <i class="fas fa-shopping-cart"></i>
+        <!-- <i class="fas fa-shopping-cart" id="btn-carrito" 
+        data-toggle="modal" data-target="#exampleModal"></i> -->
+       
+         <!-- BUTTON TRIGGER MODAL-->
+         <button type="button" class="btn btn-primary"
+          data-toggle="modal" data-target="#exampleModal" id="btn-carrito">
+        </button>
+
+      <!-- MODAL CARRITO-->
+
+        <div class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document" id="carrito-contenedor">
+            <div class="modal-content">
+        
       </section>
 
       <!-- -------------------------------------------- CARDS--------------------------------------------------------------- -->
@@ -243,12 +259,18 @@
   src="https://kit.fontawesome.com/20919fb6fe.js"
   crossorigin="anonymous"
 ></script> 
-<!-- CDN Bootstrap 5.0.2-->
+<!-- CDN Bootstrap 5.0.2 -- JS-->
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script> 
+
+  <!-- CDN Bootstrap 4.6.0 -- JS-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
 <!-- jsnuestrosproductos.js JS-->
 <script src= "/js/jsnuestrosproductos.js" ></script>
 </body>
