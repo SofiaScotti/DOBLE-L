@@ -1,18 +1,8 @@
-//* ---------------------------- DESAFIO EVENTOS CLASE  ----------------[]-----------*//
+//***************** DESAFIO JQUERY  CLASE 12 SELECTORES Y EVENTOS ****************************  []  *************************************** */
 
 let formulario = document.getElementById("form");
 
 formulario.addEventListener("submit", validarFormulario);
-
-// function validarFormulario(e) {
-//   e.preventDefault();
-//   const name = document.getElementById("Nombre").value;
-//   const apellido = document.getElementById("Apellido").value;
-//   const telefono = document.getElementById("telefono").value;
-//   const email = document.getElementById("email").value;
-//   const mensaje = document.getElementById("Mensaje").value;
-//   console.log(name, apellido, telefono, email, mensaje);
-// }
 
 function validarFormulario(e) {
   e.preventDefault();
@@ -24,4 +14,6 @@ function validarFormulario(e) {
   console.log(name, apellido, telefono, email, mensaje);
 }
 
-//************************************************************************************ */
+//**************  DESAFIO CLASE 13 COMPLEMENTARIO ANIMACIONES CONCATENADAS CON JQUERY ********************************************************************** */
+
+fadeIn.delay.fadeOut;

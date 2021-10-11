@@ -1,5 +1,6 @@
 class Product {
-  constructor(brand, name, price, stock, imagen, categoria) {
+  constructor(id, brand, name, price, stock, imagen, categoria) {
+    this.id = id;
     this.brand = brand;
     this.name = name;
     this.price = price;
@@ -13,6 +14,7 @@ class Product {
 }
 //*QUESOS*//
 const product1 = new Product(
+  1,
   "La Paulina",
   "Queso Cremoso",
   396,
@@ -21,6 +23,7 @@ const product1 = new Product(
   "queso"
 );
 const product2 = new Product(
+  2,
   "La Paulina",
   "Queso Cremoso Doble Crema",
   405,
@@ -29,6 +32,7 @@ const product2 = new Product(
   "queso"
 );
 const product3 = new Product(
+  3,
   "La Paulina",
   "Queso Dambo",
   320,
@@ -37,6 +41,7 @@ const product3 = new Product(
   "queso"
 );
 const product4 = new Product(
+  4,
   "La Paulina",
   "Queso Goya",
   458,
@@ -45,6 +50,7 @@ const product4 = new Product(
   "queso"
 );
 const product5 = new Product(
+  5,
   "La Paulina",
   "Queso Pategrás",
   360,
@@ -53,6 +59,7 @@ const product5 = new Product(
   "queso"
 );
 const product6 = new Product(
+  6,
   "La Paulina",
   "Queso Azul",
   473,
@@ -62,6 +69,7 @@ const product6 = new Product(
 );
 //*JAMONES*//
 const product7 = new Product(
+  7,
   "Calchaquí",
   "Jamón Cocido Natural",
   205,
@@ -71,6 +79,7 @@ const product7 = new Product(
 );
 //*SALAMES*//
 const product8 = new Product(
+  8,
   "Cagnoli",
   "Salame Fuet",
   112,
@@ -80,6 +89,7 @@ const product8 = new Product(
 );
 //* SNACKS *//
 const product9 = new Product(
+  9,
   "Krachitos",
   "Papas Fritas Corte Americano",
   234,
@@ -88,6 +98,7 @@ const product9 = new Product(
   "snacks"
 );
 const product10 = new Product(
+  10,
   "Krachitos",
   "Papas fritas Corte Tradicional",
   229,
@@ -96,6 +107,7 @@ const product10 = new Product(
   "snacks"
 );
 const product11 = new Product(
+  11,
   "Krachitos",
   "Bastonitos",
   255,
@@ -153,22 +165,22 @@ renderizarProductos(snacks, "contenedor-snacks");
 
 function renderizarProductos(arrayProductos, contenedorId) {
   let acumulador = ``;
-  arrayProductos.forEach((myProducts) => {
-    acumulador += `<div class="container">
-      <div class="row NuestrosProductos__Card--Prod">
+  arrayProductos.forEach((myProduct) => {
+    acumulador += `
+      
         <div class="col-12 col-md-4">
           <div class="card" style="width: 18rem">
             <img
-              src="${myProducts.imagen}"
+              src="${myProduct.imagen}"
               class="card-img-top"
               alt="Queso Cremoso"
             />
             <div class="card-body">
-              <h5 class="card-title"> ${myProducts.name}</h5>
-              <p class="card-text"> $${myProducts.price} x Kg. </p>
+              <h5 class="card-title"> ${myProduct.name}</h5>
+              <p class="card-text"> $${myProduct.price} x Kg. </p>
               <a
                 href="#"
-                onclick="agregarAlCarrito(${myProducts.name})"
+                onclick="agregarAlCarrito(${myProduct.id})"
                 class="btn btn-primary"
               >
                 Agregar al Carrito
@@ -176,33 +188,91 @@ function renderizarProductos(arrayProductos, contenedorId) {
             </div>
           </div>
         </div>
-      </div>
-    </div>;`;
+      `;
   });
   const contenedorCards = document.getElementById(contenedorId);
   contenedorCards.innerHTML = acumulador;
   console.log(contenedorCards);
 }
 
-//** ------------  JSON  */
+// carrito //
 
-const userLS = localStorage.getItem("usuario");
+let carrito = [];
 
-if (userLS) {
-  console.log("el" + userLS + " ha ingresado.");
-} else {
-  const user = prompt("Ingresar usuario");
-  localStorage.setItem("usuario", user);
+class Carrito {
+  constructor(id, brand, name, price, imagen, cantidad) {
+    this.id = id;
+    this.brand = brand;
+    this.name = name;
+    this.price = price;
+    this.imagen = imagen;
+    this.cantidad = cantidad;
+  }
 }
 
-const baseDeDatos = JSON.stringify(dataBase);
+function agregarAlCarrito(idProducto) {
+  const productoSeleccionado = dataBase.find(
+    (product) => product.id === idProducto
+  );
 
-console.log(baseDeDatos);
+  if (!carrito.some((product) => product.id === idProducto)) {
+    const productoAgregado = new Carrito(
+      productoSeleccionado.id,
+      productoSeleccionado.brand,
+      productoSeleccionado.name,
+      productoSeleccionado.price,
+      productoSeleccionado.imagen,
+      1
+    );
+    carrito.push(productoAgregado);
+    console.log(carrito);
+    guardarStorage("carrito", carrito);
+  } else {
+    const productoAgregado = carrito.find(
+      (product) => product.id === idProducto
+    );
+    productoAgregado.cantidad++;
+    guardarStorage("carrito", carrito);
+  }
+}
 
-carrito = [];
+function guardarStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
 
-carrito.push(dataBase[2]);
-carrito.push(dataBase[3]);
+function recuperarStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
 
-const carritoJSON = JSON.stringify(carrito);
-localStorage.setItem("carrito", carritoJSON);
+// IMPRIMIR CARRITO //
+
+function mostrarCarrito(imprimirCarrito) {
+  let acumulador = ``; 
+  imprimirCarrito.some(key) => {
+    acumulador += `
+    <div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mi Carrito</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>${productoAgregado.imagen}</p>
+        <p>${productoAgregado.name}</p>
+        <p>${productoAgregado.price}</p>
+        <p>${productoAgregado.cantidad}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Comprar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Vaciar Carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+  }
+};
+
