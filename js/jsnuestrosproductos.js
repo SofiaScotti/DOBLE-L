@@ -8,7 +8,9 @@ class Product {
     this.imagen = imagen;
     this.categoria = categoria;
   }
-  
+  mostrarMarca() {
+    console.log(this.brand);
+  }
 }
 //*QUESOS*//
 // const product1 = new Product(
@@ -272,9 +274,9 @@ function mostrarCarrito(miCarrito, contenedor) {
     acumulador += `                
             <div class="modal-body">
                 <img src="${producto.imagen}" width="50px">
-                <p>${producto.name}</p>
-                <p>${producto.price}</p>
-                <p>${producto.cantidad}</p>
+                <p>Agregaste: ${producto.name}</p>
+                <p>Precio: $${producto.price}</p>
+                <p>Cantidad: ${producto.cantidad}</p>
             </div>
         `;
   });
