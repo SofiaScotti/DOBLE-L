@@ -17,9 +17,18 @@ function validarFormulario(e) {
 
 //************  MODAL  ************* */
 
+class Datos {
+  constructor(nombre, apellido, mail, telefono){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.mail = mail;
+    this.telefono = telefono;
+  }
+}
+
 const formEnviado = document.getElementById('btn-enviar');
 const contenedor = document.getElementById('contenedor');
-formEnviado.addEventListener('click', function(){
+formEnviado.addEventListener(function(){
   mostrarMensaje(formEnviado, contenedor);
 });
 
@@ -39,5 +48,5 @@ function mostrarMensaje(respuesta, contenedor) {
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     `;
-    respuesta.innerHTML = contenedor;
+    contenedor.innerHTML = respuesta;
 };
