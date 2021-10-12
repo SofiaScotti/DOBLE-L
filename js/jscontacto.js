@@ -14,6 +14,30 @@ function validarFormulario(e) {
   console.log(name, apellido, telefono, email, mensaje);
 }
 
-//**************  DESAFIO CLASE 13 COMPLEMENTARIO ANIMACIONES CONCATENADAS CON JQUERY ********************************************************************** */
 
-fadeIn.delay.fadeOut;
+//************  MODAL  ************* */
+
+const formEnviado = document.getElementById('btn-enviar');
+const contenedor = document.getElementById('contenedor');
+formEnviado.addEventListener('click', function(){
+  mostrarMensaje(formEnviado, contenedor);
+});
+
+function mostrarMensaje(respuesta, contenedor) {
+  
+  `
+      <div class="modal-header">
+        <h5 class="modal-title">¡Formulario Enviado!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Gracias por tu consulta. Te contactaremos pronto.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    `;
+    respuesta.innerHTML = contenedor;
+};
