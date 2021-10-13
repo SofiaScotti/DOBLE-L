@@ -34,6 +34,7 @@ formEnviado.addEventListener('click', function(e){
 });
 
 
+
 //************  MODAL  ************* */
 
 function mostrarMensaje(respuesta, contenedor) {
@@ -53,3 +54,8 @@ function mostrarMensaje(respuesta, contenedor) {
       </div>
     `;
 };
+
+$('#btn-enviar').click(function() {
+  $('#btn-enviar').fadeOut("slow", function() {
+  });
+});
