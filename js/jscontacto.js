@@ -1,9 +1,9 @@
 class Datos {
-  constructor(nombre, apellido, mail, telefono, mensaje){
+  constructor(nombre, apellido, telefono, mail, mensaje){
     this.nombre = nombre;
     this.apellido = apellido;
-    this.mail = mail;
     this.telefono = telefono;
+    this.mail = mail;
     this.mensaje = mensaje;
   }
 }
@@ -17,8 +17,8 @@ const formEnviado = document.getElementById('btn-enviar');
 
 function validarFormulario(e) {
   e.preventDefault();
-  const nombre = $("#Nombre").val();
-  const apellido = $("#Apellido").val();
+  const nombre = $("#nombre").val();
+  const apellido = $("#apellido").val();
   const telefono = $("#telefono").val();
   const email = $("#email").val();
   const mensaje = $("#mensaje").val();
@@ -46,8 +46,9 @@ function mostrarMensaje(respuesta, contenedor) {
       </div>
       <div class="modal-body">
         <p>Gracias por tu consulta, ${respuesta.nombre} ${respuesta.apellido}!</p>
-        <p>Revisá que tus datos sean correctos y te contactaremos pronto:</p>
-        <p> Teléfono: ${respuesta.telefono} Mail: ${respuesta.mail}</p>
+        <p>Revisá que tus datos sean correctos y te contactaremos a la brevedad:</p>
+        <p> Teléfono: ${respuesta.telefono} <p/>
+        <p>E-mail: ${respuesta.mail}</p>
         <p> Tu mensaje: </p>
         <p> ${respuesta.mensaje} </p>
       </div>
