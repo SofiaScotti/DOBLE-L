@@ -283,7 +283,15 @@ function mostrarCarrito(miCarrito, contenedor) {
   acumulador += `
   <div class="modal-footer">
       <button type="button" class="btn btn-primary">Comprar</button>
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Vaciar Carrito</button>
+      <button type="reset" class="btn btn-secondary" id="btn-vaciar">Vaciar Carrito</button>
   </div>`;
   contenedor.innerHTML = acumulador;
+
+  const btnVaciar = document.getElementById('btn-vaciar');
+  btnVaciar.addEventListener('click', function(){      
+    console.log('vaciando')
+    localStorage.clear();
+    carrito = [];
+    contenedor.innerHTML = '';
+  })
 };
