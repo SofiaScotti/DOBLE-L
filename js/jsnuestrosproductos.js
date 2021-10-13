@@ -133,14 +133,12 @@ let dataBase = []
 const URL = './json/productos.json'
 
 $.getJSON( URL, function(data, success) {
-    console.log(data)
     dataBase = data.map(item => new Product(item.id, item.brand, item.name, item.price, item.stock, item.imagen, item.categoria))
     filtraProductos(dataBase);
 });
 
 function mostrarMarcasProductos(dataBase) {
   const dataBaseLength = dataBase.length;
-  console.log(dataBaseLength);
   for (let i = 0; i < dataBaseLength; i++) {
     dataBase[i].mostrarMarca();
   }
@@ -154,19 +152,15 @@ function filtrarCategoria(arrayProductos, categoria) {
 }
 function filtraProductos(dataBase) {
     const quesos = filtrarCategoria(dataBase, "queso");
-    console.log(quesos);
     renderizarProductos(quesos, "contenedor-quesos");
     
     const jamones = filtrarCategoria(dataBase, "jamones");
-    console.log(jamones);
     renderizarProductos(jamones, "contenedor-jamones");
     
     const salames = filtrarCategoria(dataBase, "salames");
-    console.log(salames);
     renderizarProductos(salames, "contenedor-salames");
     
     const snacks = filtrarCategoria(dataBase, "snacks");
-    console.log(snacks);
     renderizarProductos(snacks, "contenedor-snacks");
 }
 
@@ -234,7 +228,6 @@ function agregarAlCarrito(idProducto) {
       1
     );
     carrito.push(productoAgregado);
-    console.log(carrito);
     guardarStorage("carrito", carrito);
     mostrarCarrito(carrito, carritoContenedor);
   } else {
@@ -289,7 +282,6 @@ function mostrarCarrito(miCarrito, contenedor) {
 
   const btnVaciar = document.getElementById('btn-vaciar');
   btnVaciar.addEventListener('click', function(){      
-    console.log('vaciando')
     localStorage.clear();
     carrito = [];
     contenedor.innerHTML = '';
