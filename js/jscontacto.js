@@ -33,7 +33,7 @@ formEnviado.addEventListener('click', function(e){
   mostrarMensaje(datos, contenedor);
 });
 
-
+// Modal //
 
 function mostrarMensaje(respuesta, contenedor) {
   contenedor.innerHTML =
@@ -57,6 +57,8 @@ function mostrarMensaje(respuesta, contenedor) {
       </div>
     `;
 };
+
+// Animación btn-enviar //
 
 $('#btn-enviar').click(function() {
   $('#btn-enviar').fadeOut("slow", function() {
