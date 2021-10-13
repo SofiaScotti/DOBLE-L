@@ -158,7 +158,7 @@ function mostrarCarrito(miCarrito, contenedor) {
   });
   acumulador += `
   <div class="modal-footer">
-      <button type="button" class="btn btn-primary">Comprar</button>
+      <button type="button" class="btn btn-primary" id="btn-comprar" onclick="location.href='./gracias.html'">Comprar</button>
       <button type="reset" class="btn btn-secondary" id="btn-vaciar">Vaciar Carrito</button>
   </div>`;
   contenedor.innerHTML = acumulador;
@@ -170,3 +170,21 @@ function mostrarCarrito(miCarrito, contenedor) {
     contenedor.innerHTML = '';
   })
 };
+
+// const btnComprar = document.getElementById('btn-comprar');
+// btn-comprar.addEventListener('click', function() {
+// location.href = "./gracias.html"
+// });
+
+
+// btnComprar.addEventListener('click', function() {
+//   // window.location.href = './gracias.html'
+// }
+
+// // $('#btn-comprar').click(function (){
+  
+// // });
+
+
+
+
