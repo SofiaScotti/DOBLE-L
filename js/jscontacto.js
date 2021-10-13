@@ -35,8 +35,6 @@ formEnviado.addEventListener('click', function(e){
 
 
 
-//************  MODAL  ************* */
-
 function mostrarMensaje(respuesta, contenedor) {
   contenedor.innerHTML =
   `
