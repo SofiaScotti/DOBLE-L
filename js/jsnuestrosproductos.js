@@ -80,7 +80,7 @@ function renderizarProductos(arrayProductos, contenedorId) {
 }
 
 
-// carrito //
+
 let carrito = [];
 if (localStorage.getItem('carrito')) {
   carrito = recuperarStorage('carrito');

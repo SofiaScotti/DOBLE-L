@@ -45,7 +45,11 @@ function mostrarMensaje(respuesta, contenedor) {
         </button>
       </div>
       <div class="modal-body">
-        <p>Gracias por tu consulta, ${respuesta.nombre} Te contactaremos pronto.</p>
+        <p>Gracias por tu consulta, ${respuesta.nombre} ${respuesta.apellido}!</p>
+        <p>Revisá que tus datos sean correctos y te contactaremos pronto:</p>
+        <p> Teléfono: ${respuesta.telefono} Mail: ${respuesta.mail}</p>
+        <p> Tu mensaje: </p>
+        <p> ${respuesta.mensaje} </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
