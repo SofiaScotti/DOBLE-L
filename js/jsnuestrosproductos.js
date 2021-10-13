@@ -171,19 +171,7 @@ function mostrarCarrito(miCarrito, contenedor) {
   })
 };
 
-// const btnComprar = document.getElementById('btn-comprar');
-// btn-comprar.addEventListener('click', function() {
-// location.href = "./gracias.html"
-// });
 
-
-// btnComprar.addEventListener('click', function() {
-//   // window.location.href = './gracias.html'
-// }
-
-// // $('#btn-comprar').click(function (){
-  
-// // });
 
 
 
