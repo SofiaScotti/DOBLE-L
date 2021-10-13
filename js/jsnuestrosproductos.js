@@ -145,8 +145,10 @@ function mostrarCarrito(miCarrito, contenedor) {
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
-    </div>`; 
-  miCarrito.forEach(producto => {
+    </div>`;
+    let total = 0; 
+  miCarrito.forEach((producto => {
+    total += producto.price * producto.cantidad;
     acumulador += `                
             <div class="modal-body">
                 <img src="${producto.imagen}" width="50px">
@@ -155,13 +157,15 @@ function mostrarCarrito(miCarrito, contenedor) {
                 <p>Cantidad: ${producto.cantidad}</p>
             </div>
         `;
-  });
+  }));
   acumulador += `
   <div class="modal-footer">
+      <span> Total: $${total}</span>
       <button type="button" class="btn btn-primary" id="btn-comprar" onclick="location.href='./gracias.html'">Comprar</button>
       <button type="reset" class="btn btn-secondary" id="btn-vaciar">Vaciar Carrito</button>
   </div>`;
   contenedor.innerHTML = acumulador;
+
 
   const btnVaciar = document.getElementById('btn-vaciar');
   btnVaciar.addEventListener('click', function(){      
@@ -170,6 +174,9 @@ function mostrarCarrito(miCarrito, contenedor) {
     contenedor.innerHTML = '';
   })
 };
+
+
+
 
 
 
